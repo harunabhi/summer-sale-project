@@ -7,95 +7,192 @@
      
 <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<style>
+    #btn-sell{
+        position: absolute;
+        left: 27%;
+        margin-top: auto;
+        margin-bottom: 10%;
+       
+   
+       
+    }
+    #new-div{
+        border: 1px solid tomato;
+        width: 342px;
+height: 350px;
+flex-shrink: 0;
+    }
+
+
+ 
+</style>
 </head>
 <body>
-    <header class="w-1920 h-873">
-        <div class="bg-yellow-200 flex">
-            <div class="">
-<h1 class="text-black  font-sans font-3xl not-italic font-medium leading-normal">---SALE FEVER---</h1>
-<p class="text-black font-sans  font-6xl no font-bold">Purchase TK 200 or above & get
-     <span class="text-pink-500  font-6xl no font-bold">20% off</span></p>
-     <!-- <div class="flex gap-x-1  items-center"> -->
-        <p class="text-black  font-sans font-2xl not-italic font-medium leading-normal">Use Promo Code</p>
-<button class=" rounded-lg bg-pink-500 text-white font-sans font-2xl font-medium not-italic leading-normal">SELL200
-    
-</button>
-     <!-- </div> -->
-
-     
-       
-    
-
+    <header>
+        <div class="flex bg-yellow-200">
+            <div class="mt-72">
+                <h5 class="text-black text-center font-sans text-3xl  font-medium not-italic leading-normal">---SALE FEVER---</h5>
+                <p class="text-black text-center text-5xl not-italic leading-normal font-bold font-sans">Purchase TK 200 or above & get <span class="text-[#E527B2]">20% off</span> </p>
+                <p class="text-black text-center  font-2xl font-normal font-sans not-italic leading-normal">use promo code</p>
+                <button id="btn-sell" class="btn btn-secondary text-white rounded-lg ">Sell200</button>
             </div>
-            
-        <img class="w-708 h-708 mt-20 mb-20 ml-972" src="images/Summer 1.png" alt="">
+            <img src="images/Summer 1.png" alt="">
         </div>
     </header>
-    <main>
-        <section class="mt-5 bg-gray-100 gap-x-1 flex ">
-            <h1 class="text-black ml-4 text-4xl font-semibold not-italic font-sans leading-normal">Kitchenware</h1>
-            <div class="mt-8  rounded-lg bg-white w-80 h-85">
-                <div class="text-center">
-                    <div class="bg-gray-700 bg-opacity-5 ml-4   w-72 h-52  ">
-                         <img class="rounded-lg mx-20  py-5" src="images/prod1.png" alt=""></div>
-                  
-                    <div class="rating mt-8">
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      </div>
-                      <p class="text-black text-xl font-sans font-semibold not-italic leading-normal">K. Accessories</p>
-                      <p class="text-gray-700 text-opacity-50 text-xl font-sans not-italic leading-normal">39.00 TK</p>
-                </div>
+<main>
+    <section>
+        <h1 class="ml-28 text-black font-sans text-4xl font-semibold not-italic leading-normal">Kitchenware</h1>
+       <div class="bg-gray-200 flex ml-10 gap-x-2">
+        <div>
+            <div onclick="handleClickBtn(this)" id="new-div" class=" rounded-lg bg-white ">
+<div class="text-center">
+
+   <div class="bg-gray-200 mx-4 my-4">
+    <img  class="bg-gray-200 w-28 h-32 ml-28 mt-5" src="images/prod1.png" alt="">
+   </div>
+
+    <div class="rating">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+      </div>
+      <P class="text-black font-sans text-xl font-semibold not-italic leading-normal">K. Accessories</P>
+      <p class="text-[#0B0B0B7F]">39.00tk</p>
+</div>
             </div>
-            <div class="mt-8  rounded-lg bg-white w-80 h-85">
-                <div class="text-center">
-                    <div class="bg-gray-700 bg-opacity-5 ml-4   w-72 h-52  ">
-                         <img class="rounded-lg mx-20  py-5" src="images/prod2.png" alt=""></div>
-                  
-                    <div class="rating mt-8">
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      </div>
-                      <p class="text-black text-xl font-sans font-semibold not-italic leading-normal">K. Accessories</p>
-                      <p class="text-gray-700 text-opacity-50 text-xl font-sans not-italic leading-normal">39.00 TK</p>
-                </div>
+        </div>
+        <div>
+            <div id="new-div" class=" rounded-lg bg-white ">
+<div class="text-center">
+
+   <div class="bg-gray-200 mx-4 my-4">
+    <img  class="bg-gray-200 w-28 h-32 ml-28 mt-5" src="images/prod2.png" alt="">
+   </div>
+
+    <div class="rating">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <P class="text-black font-sans text-xl font-semibold not-italic leading-normal">K. Accessories</P>
+      <p class="text-[#0B0B0B7F]">25.00tk</p>
+</div>
             </div>
-            <div class="mt-8  rounded-lg bg-white w-80 h-85">
-                <div class="text-center">
-                    <div class="bg-gray-700 bg-opacity-5 ml-4   w-72 h-52  ">
-                         <img class="rounded-lg mx-20  py-5" src="images/prod3.png" alt=""></div>
-                  
-                    <div class="rating mt-8">
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                      </div>
-                      <p class="text-black text-xl font-sans font-semibold not-italic leading-normal">K. Accessories</p>
-                      <p class="text-gray-700 text-opacity-50 text-xl font-sans not-italic leading-normal">39.00 TK</p>
-                </div>
+
+        </div>
+        <div>
+            <div id="new-div" class=" rounded-lg bg-white ">
+<div class="text-center">
+
+   <div class="bg-gray-200 mx-4 my-4">
+    <img  class="bg-gray-200 w-28 h-32 ml-28 mt-5" src="images/prod3.png" alt="">
+   </div>
+
+    <div class="rating">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <P class="text-black font-sans text-xl font-semibold not-italic leading-normal">Home Cooker</P>
+      <p class="text-[#0B0B0B7F]">49.00tk</p>
+</div>
             </div>
-            <div>
-                <div class="bg-white rounded-lg">
-                    <p class="text-black font-sans text-2xl font-medium leading-normal not-italic mb-4" >Have coupon?</p>
-                  <input class="rounded-lg px-4 border-1 border-gray-700 border-opacity-25" type="text" name="" id="" placeholder="Coupon code">
-                  <button class="text-white text-center font-sans text-xl font-semibold leading-normal not-italic rounded-r-lg bg-pink-600 py-3 px-2">Apply</button>
-                </div>
+        </div>
+        <div class="">
+            <h5>Have coupon?</h5>
+            <input type="text" name="" id="" placeholder="coupon here">
+            <button class="bg-[#E527B2] text-white">Apply</button>
+            <div class="box">
+<li>
+    1.
+</li>
+<li></li>
+<li></li>
             </div>
-            <div>
-                <p>1.Home Cooker</p>
-                <p>2.Sportes cates</p>
-                <p>3.Home Cooker</p>
+        </div>
+       </div>
+    </section>
+    <section>
+        <h1 class="ml-28 text-black font-sans text-4xl font-semibold not-italic leading-normal">Sportswear</h1>
+       <div class="bg-gray-200 flex ml-10 gap-x-2">
+        <div>
+            <div onclick="handleClickBtn(this)" id="new-div" class=" rounded-lg bg-white ">
+<div class="text-center">
+
+   <div class="bg-gray-200 mx-4 my-4">
+    <img  class="bg-gray-200 w-28 h-32 ml-28 mt-5" src="images/prod4.png" alt="">
+   </div>
+
+    <div class="rating">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+      </div>
+      <P class="text-black font-sans text-xl font-semibold not-italic leading-normal">Sports Back Cap</P>
+      <p class="text-[#0B0B0B7F]">49.00tk</p>
+</div>
             </div>
-        </section>
+        </div>
+        <div>
+            <div id="new-div" class=" rounded-lg bg-white ">
+<div class="text-center">
+
+   <div class="bg-gray-200 mx-4 my-4">
+    <img  class="bg-gray-200 w-28 h-32 ml-28 mt-5" src="images/prod5.png" alt="">
+   </div>
+
+    <div class="rating">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked/>
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <P class="text-black font-sans text-xl font-semibold not-italic leading-normal">Full Jersey Set</P>
+      <p class="text-[#0B0B0B7F]">69.00tk</p>
+</div>
+            </div>
+
+        </div>
+        <div>
+            <div id="new-div" class=" rounded-lg bg-white ">
+<div class="text-center">
+
+   <div class="bg-gray-200 mx-4 my-4">
+    <img  class="bg-gray-200 w-28 h-32 ml-28 mt-5" src="images/prod6.png" alt="">
+   </div>
+
+    <div class="rating">
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+      </div>
+      <P class="text-black font-sans text-xl font-semibold not-italic leading-normal">Sports cates</P>
+      <p class="text-[#0B0B0B7F]">159.00tk</p>
+</div>
+            </div>
+        </div>
      
-    </main>
+       </div>
+    </section>
+</main>
+  
+
+       
+
+     
+  
+    <script src="js/function.js"></script>
 </body>
 </html>
